@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sy8-1</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        form{
+            margin:200px auto;
+            height:1100px;
+            width:1000px;
+            border:2px solid black;
+        }
+        td{
+            width:400px;
+        }
+        .table1{
+            height:200px;
+            width:900px;
+            margin:30px auto;
+            border:1px solid black;
+            border-spacing: 50px;
+
+        }
+        .table2{
+            height:300px;
+            width:900px;
+            margin:30px auto;
+            border:1px solid black;
+            border-spacing: 50px;
+        }
+        .table3{
+            height:100px;
+            width:900px;
+            margin:30px auto;
+            border:1px solid black;
+            border-spacing: 50px;
+        }
+
+
+        [type="text"]{
+            width:300px;
+            height:30px;
+            float:right;
+        }
+        select{
+            margin-left: 33px;
+            width:170px;
+
+        }
+        [type="radio"]{
+            margin-left:14px;
+        }
+        [type="checkbox"]{
+            margin-left:26px;
+        }
+        #long{
+            height:30px;
+            width:600px;
+        }
+        .short{
+            height:30px;
+            width:100px;
+            float:none;
+        }
+        #middle{
+            height:30px;
+            width:300px;
+            float:right;
+        }
+        #bot1{
+            position: relative;
+            left:400px;
+        }
+        #bot2{
+            position: relative;
+            left:530px;
+        }
+    </style>
+</head>
+<body>
+<form>
+<table class="table1">
+
+<tr>
+    <td>
+        发货人
+        <input type="text">
+    </td>
+    <td>
+        地址
+        <input type="text">
+    </td>
+</tr>
+<tr>
+    <td>电话
+        <input type="text">
+    </td>
+    <td>邮编
+        <input type="text">
+    </td>
+</tr>
+</table>
+<table class="table2">
+    <tr>
+        <td>
+            收货人
+            <input type="text" >
+        </td>
+        <td>
+            地址
+            <input type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>电话
+            <input type="text">
+        </td>
+        <td>邮编
+            <input type="text">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            地区
+            <select>
+                <option value ="北京">北京</option>
+                <option value ="上海">上海</option>
+                <option value="广州">广州</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>包装
+            <label><input type="checkbox" value="" />纸箱 </label>
+            <label><input type="checkbox" value="" />木箱 </label>
+            <label><input type="checkbox" value="" />快递袋 </label>
+            <label><input type="checkbox" value="" />其他 </label>
+
+        </td>
+    </tr>
+    <tr>
+        <td>支付方式
+            <label><input name="single" type="radio" value="" />现金 </label>
+            <label><input name="single"  type="radio" value="" />支付宝 </label>
+            <label><input name="single" type="radio" value="" />网银 </label>
+            <label><input name="single" type="radio" value="" />ATM </label>
+
+        </td>
+    </tr>
+
+
+</table>
+<table class="table3">
+  <tr>
+      <td colspan="4">货物名称
+            <input id="long" type="text">
+      </td>
+  </tr>
+    <tr>
+        <td>数量
+            <input type="text" class="short">
+        </td>
+        <td>重量
+            <input type="text" class="short">
+        </td>
+        <td colspan="2">发货时间
+            <input type="text" id="middle">
+        </td>
+        <td></td>
+    </tr>
+</table>
+<input type="button" id="bot1" value="确定">
+    <input type="button" id="bot2" value="取消">
+
+
+
+
+</form>
+</body>
+</html>
